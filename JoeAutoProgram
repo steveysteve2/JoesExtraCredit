@@ -1,0 +1,31 @@
+import Car as Ca
+import Customer as C
+import ServiceQuote as S
+
+def main():
+    Car = Ca.Car("Volkswagon", "Tiguan", 2015)
+    Cust = C.Customer("Andrew S.", "1818 S. 7th", "512-921-7887")
+    sq = S.ServiceQuote(230.32, 2421.23, 0.08)
+
+    print('Customer Reciept')
+    print('--------------------------------')
+    print('Name: ', Cust.get_name())
+    print('Phone: ', Cust.get_phone())
+    print('Address: ', Cust.get_address())
+    print('********************************')
+    print('Make: ', Car.get_make())
+    print('Model: ', Car.get_model())
+    print('Year: ', Car.get_year())
+    print('********************************')
+    print('Parts Charges: ', sq.get_parts_charges())
+    print('Labor Charges: ', sq.get_labor_charges())
+    print('Sales Tax: ', sq.get_sales_tax())
+    print('********************************')
+    print('Total: ', sq.get_total_charges())
+
+main()
+
+
+
+
+
